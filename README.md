@@ -1,4 +1,4 @@
-# Anonymizer for postgrsql
+# Anonymizer for postgresql
 
 ![Anonim](https://ic.pics.livejournal.com/hannibal_md/26923335/87805/87805_600.png)
 
