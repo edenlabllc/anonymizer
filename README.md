@@ -6,10 +6,12 @@ This application created for anonimiztion of the data in the postgres tables.
 
 ## features
 
-- Use gorutines for parallelism
+- Used gorutines for parallelism
 - Simple config in yaml format
 - Can be used without compilation
+  - `go run ./main.go -h`
 - Can be dockerize
+  - `docker build -t anonimazer:latest .`
 
 ## how it works
 
@@ -40,7 +42,7 @@ go run ./main.go -user=user -pass=password -name=dbname -host=localhost -port=25
 
 3. Some limitations:
 
-- name of the table in config file must be in `camelcase` (exempl: OneField)
+- name of the table in config file must be in `camelcase` (exempl: `FirstField`)
 - if column name is `id`, in config file it should be with `- name` in uppercase: `ID`
 
 ## config.yaml options
